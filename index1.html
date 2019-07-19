@@ -1,0 +1,1395 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<title>Rest & Go</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,800i" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+ <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+
+<body>
+
+
+
+
+<!-- header -->
+<style type="text/css">
+  .login-area a {
+    color: #fff;
+    font-size: 16px;
+}
+li.sign {
+    background: #3b3d4c;
+    border: #3b3d4c !important;
+        margin-left: 10px;
+}
+.login-area ul li {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border: 1px #fff solid;
+    text-align: center;
+}
+
+.login-area:before {
+    position: absolute;
+    content: "";
+    width: 329px;
+    height: 68px;
+    background: url(../image/logo.png);
+    right: 37%;
+    margin-top: -1px;
+}
+.logo-text img {
+    width: 36%;
+}
+.login-area ul {
+    position: relative;
+    top: -49px;
+}
+
+</style>
+
+<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+div#myDropdown ul {
+    margin-top: 49px;
+}
+div#myDropdown ul li {
+    color: #222;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    text-align: left;
+    border: 0px;
+    border-bottom: 1px #e9e7e7 solid;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 339px;
+    overflow: inherit;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -124px;
+    padding: 9px;
+    margin-top: -46px;
+}
+div#myDropdown ul li:hover {
+    background: #d5d5d5;
+    padding-left: 10px;
+}
+div#myDropdown a {
+    text-align: center;
+    background: no-repeat;
+    border: 1px #bcb7b7 solid;
+    padding: 13px;
+    font-size: 18px;
+}
+button.dropbtn img {
+    width: 20px;
+    margin-right: 7px;
+}
+button.dropbtn {
+    background: #3b3d4c;
+    position: relative;
+    top: -57px;
+}
+div#myDropdown:before {
+    width: 18px;
+    height: 8px;
+    position: absolute;
+    content: "";
+    background: url(image/arrow.png);
+    left: 53%;
+    top: -11px;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3b3d4c;
+}
+
+</style>
+<div class="header-area">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12 col-md-12">
+            <div class="header-content">
+               <div class="col-sm-12 col-md-12">
+                <div class="login-area" align="right">
+                  <div class="logo-text" align="center">
+                    <img src="image/logo.png">
+                  </div>
+                  <ul>
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Second">Create a Account</button></li>
+                    <li class="sign"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#third">Login</button></li>
+
+                  </ul> 
+
+                  <!-- this section user login stage -->
+                  <!-- <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><img src="image/admin-pic.png">Lalit Bisht</button>
+  <div id="myDropdown" class="dropdown-content" align="left">
+    <ul>
+      <li class="tigdm">My bookings</li>
+      <li>Saved properties list</li>
+      <li>Inbox</li>
+      <li>My bookings</li>
+    </ul>
+
+    <a href="#">Sign Out</a>
+   
+  </div>
+</div> -->
+               
+                </div>
+                  <div class="menu">
+                     <!-- <nav class="navbar navbar-inverse sho">
+                        <div class="navbar-header">
+                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-2" aria-expanded="false">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar top-bar"></span>
+                           <span class="icon-bar middle-bar"></span>
+                           <span class="icon-bar bottom-bar"></span>
+                           </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-2" align="center">
+                           <ul class="nav navbar-nav">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="#">Hotels</a></li>
+                              <li  class="codes"><a href="#">Blog</a></li>
+                              <li><a href="#">Login</a></li>
+                              <li><a href="#">Register </a></li>
+                              <li><a href="#">Contact Us</a></li>
+                           </ul>
+                        </div>
+                     </nav> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row" align="center">
+            <div class="text">
+               <p align="center">With Rest &amp; Go<br><span>You’ll Never Forget<br>
+                  Your Stay</span>
+               </p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12 col-md-12 ser home">
+               <div class="search-hotel-area">
+                  <div class="col-sm-4 col-md-4">
+                     <form action="/action_page.php" class="icon">
+                        <label class="se"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+                        <input type="text"  placeholder="Enter Destination.." name="search"> 
+                     </form>
+                  </div>
+                  <div class="col-sm-2 col-md-2">
+                     <div class="month-area ss">
+                        <img src="image/calender.png">
+                        <div class="time-area">
+                           <form>
+                              <input type="text" class="form-control hasDatepicker" placeholder="Date" name="date" id="date">
+                              <input type="text" class="form-control hasDatepicker" placeholder="Saturday" name="date" id="day">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2 col-md-2 ">
+                     <div class="month-area ss">
+                        <img src="image/calender.png">
+                        <div class="time-area">
+                           <form>
+                              <input type="text" class="form-control hasDatepicker" placeholder="Date" name="date" id="date">
+                              <input type="text" class="form-control hasDatepicker" placeholder="Saturday" name="date" id="day">
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2 col-md-2 ">
+                     <div class="month-area ss">
+                        <img src="image/adult.png"> 
+                        <div class="time-area">
+                           <h2>5 adults</h2>
+                           <p>4 rooms</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-2 col-md-2 vv">
+                     <div class="month-area butt">
+                        <a href="hotel.html"> <input type="submit" class="btn btn-default sear" placeholder="Search" name="submit" value="submit"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+            
+ <!-- /header -->    
+
+<!-- Button trigger modal -->
+
+<div class="container">
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#first">first</button> -->
+<!-- Modal-first -->
+<div class="modal fade re" id="first" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        
+        <button type="button" class="close jh" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="head-line">
+        <p>Have trouble remembering your Rest & Go password? Login 
+with facebook now and you will never have to</p>
+      </div>
+      <div class="head-line-pic" align="center">
+         <a href="#"><img src="image/face.png"></a>
+         <p>or</p>
+      </div>
+      <div class="enter-area">
+        <p>
+          Enter your mobile number and we”ll send you a verification 
+code to <span>reset your password</span></p>
+      </div>
+      <div class="number">
+        <form>
+          <p>Mobile number</p>
+            <div class="input-group">  
+    <span class="input-group-addon"><img src="image/flag.png">+60</span>
+    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+  </div>
+        </form>
+      </div>
+      <div class="captcha"></div>
+<div class="submit-area">
+  <input type="submit" class="btn btn-info sub" value="Submit">
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- second-area -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Second">Second</button>
+<!-- Modal-first -->
+<div class="modal fade" id="Second" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered aq" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h3 align="left">Sign Up</h3>
+        <button type="button" class="close gf" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="head-line">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 rt">
+            <div class="have-mail">
+              <div class="mail-1">
+                <img src="image/mail-area.png"><a href="#">Email</a>
+              </div>
+               <div class="phone-1">
+                <img src="image/mobile-area.png"><a href="#">Mobile</a>
+              </div>
+            </div>
+             <div class="head-line-pic second" align="center">
+              <p>or</p>
+         <a href="#"><img src="image/face.png"></a>
+         <h4>Already have a account? <a href="#">Sign In</a></h4>
+      </div>
+
+          </div>
+
+          <!-- <div class="col-sm-6 col-md-6">
+            <div class="promo-area">
+              <form>
+                <div class="form-group as">
+    <label for="email">First Name*</label>
+    <input type="text" class="form-control se" id="">
+  </div>
+
+  <div class="form-group as">
+    <label for="email">Last Name*</label>
+    <input type="text" class="form-control se" id="">
+  </div>
+
+  <div class="form-group as">
+    <label for="email">Email*</label>
+    <input type="email" class="form-control se" id="">
+  </div>
+  <div class="form-group as">
+    <label for="email">Password*</label>
+    <input type="password" class="form-control se" id="">
+  </div>
+   <div class="checkbox">
+    <label><input type="checkbox"> Email me exclusive Rest & Go promotions. <br>I can unsubscribe at any time as stated in the privacy policy</label>
+  </div>
+    <div class="captcha"></div>
+
+<div class="create-area">
+<input type="submit" class="btn btn-info create" value="Create Account">
+</div>
+
+              </form>
+            </div>
+          </div> -->
+
+          <div class="col-sm-6 col-md-6">
+            <div class="promo-area">
+              <form>
+                <div class="form-group as">
+    <label for="email">First Name*</label>
+    <input type="text" class="form-control se" id="">
+  </div>
+
+  <div class="form-group as">
+    <label for="email">Last Name*</label>
+    <input type="text" class="form-control se" id="">
+  </div>
+
+   <div class="form-group as">
+   <div class="number nh">
+          <p>Mobile number</p>
+            <div class="input-group">  
+    <span class="input-group-addon"><img src="image/flag.png">+60</span>
+    <input id="msg" type="text" class="form-control de" name="msg" placeholder="Additional Info">
+  </div>
+  </div>
+        
+      </div>
+  <div class="form-group as">
+    <label for="email">Password*</label>
+    <input type="password" class="form-control se" id="">
+  </div>
+   <div class="checkbox">
+    <label><input type="checkbox"> Email me exclusive Rest & Go promotions. <br>I can unsubscribe at any time as stated in the privacy policy</label>
+  </div>
+    <div class="captcha"></div>
+
+<div class="create-area">
+<!-- <input type="submit" class="btn btn-info create" value="Create Account"> -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fourth">Create Account</button>
+</div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    
+
+    </div>
+  </div>
+</div>
+
+
+<!-- third-area -->
+
+
+<!-- Modal-first -->
+<div class="modal fade" id="third" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered aq" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h3 align="left">Sign Up</h3>
+        <button type="button" class="close gf" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="head-line">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 rt ki">
+            <div class="hate-area">
+              <p>Hate remembering your Rest & Go password? Login with Facebook now and you will never have to</p>
+            </div>
+            <div class="have-mail fd">
+              <div class="mail-new">
+                <img src="image/mail-area.png"><a href="#">Email</a>
+              </div>
+               <div class="phone-new">
+                <img src="image/mobile-area.png"><a href="#">Mobile</a>
+              </div>
+            </div>
+             <div class="head-line-pic second hh" align="center">
+              <p>or</p>
+         <a href="#"><img src="image/face.png"></a>
+         
+      </div>
+      <div class="create-new">
+        <h4>No account yet? <input type="submit" class="btn btn-info create new" value="Create Account"></h4>
+      </div>
+
+          </div>
+
+          <!-- <div class="col-sm-6 col-md-6">
+            <div class="promo-area">
+              <form>
+
+
+
+
+  <div class="form-group as new">
+    <label for="email">Email*</label>
+    <input type="email" class="form-control se" id="">
+  </div>
+  <div class="form-group as re">
+    <label for="email">Password*</label>
+    <input type="password" class="form-control se" id="">
+    <p><a href="#">Forgot your password?</a></p>
+  </div>
+    <div class="captcha"></div>
+
+<div class="create-area tr tt" align="center">
+<input type="submit" class="btn btn-info sign" value="Sign In">
+<p>By proceeding you agree to Rest & Go <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+</div>
+
+              </form>
+            </div>
+          </div>  -->
+
+          <div class="col-sm-6 col-md-6">
+            <div class="promo-area">
+              <form>
+
+
+
+
+  <div class="form-group as rr">
+   <div class="number nh">
+          <p>Mobile number</p>
+            <div class="input-group">  
+    <span class="input-group-addon"><img src="image/flag.png">+60</span>
+    <input id="msg" type="text" class="form-control de" name="msg" placeholder="Additional Info">
+  </div>
+  </div>
+        
+      </div>
+  <div class="form-group as re">
+    <label for="email">Password*</label>
+    <input type="password" class="form-control se" id="">
+    <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#first">Forgot your password?</button></p>
+  </div>
+    <div class="captcha"></div>
+
+<div class="create-area tr tt" align="center">
+<input type="submit" class="btn btn-info sign" value="Sign In">
+<p>By proceeding you agree to Rest & Go <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
+</div>
+
+              </form>
+            </div>
+          </div>
+
+        
+
+        </div>
+      </div>
+
+
+    
+
+    </div>
+  </div>
+</div>
+
+
+<!-- fourth-area -->
+
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fourth">fourth</button> -->
+<!-- Modal-first -->
+<div class="modal fade" id="fourth" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h3 align="left">Verification</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="head-line ii">
+        <p>
+We have sent a verification code to +60-xxxxxxxxxx. This code will expire 1n 10 minutes. <a href="#">Resend code</a></p>
+      </div>
+     <div class="verification">
+      <form>
+        <ul>
+          <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+         <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+         <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+         <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+
+         <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+         <li><div class="expire-area" align="center">
+           <div class="form-group num">
+    <input type="text" class="form-control old" maxlength="1">
+  </div>
+         </div>
+       </li>
+        </ul>
+     </form>
+     </div>
+     <div class="submit-area">
+  <input type="submit" class="btn btn-info sub" value="Verify">
+</div>
+      <div class="enter-area as">
+        <p>
+          Haven't recieved a verification code on your mobile yet? <a href="#">Use another mobile number</a></p>
+          <p>Already have a account? <a href="#">Sign In</a></p>
+      </div>
+     
+      <div class="captcha"></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- /container-area -->
+</div>
+
+
+<style type="text/css">
+
+div#first {
+    z-index: 9999;
+    position: absolute;
+}
+.modal-header {
+    min-height: 40.428571px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+}
+button.close.jh {
+    margin-top: -8px;
+}
+
+.modal-header .close {
+    margin-top: -16px;
+}
+.verification ul {
+    margin-left: 15px;
+}
+.enter-area.as p a {
+    color: #0e3d66;
+    font-weight: 600;
+}
+
+.form-group.num {
+    left: 55%;
+}
+.verification ul li {
+    width: 8%;
+    display: inline-block;
+}
+input.form-control.old {
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px #bcbcbc solid;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+
+</style>
+
+
+
+<style type="text/css">
+  .head-line p {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 0px 0px 40px;
+    margin-right: 5px;
+}
+.head-line-pic p {
+    color: #8c8c8c;
+    font-size: 22px;
+        margin-bottom: 0px;
+}
+.enter-area p {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 0px 0px 40px;
+    margin-right: 15px;
+}
+.enter-area p span {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
+.number span {
+    background: #e3e3e3;
+    color: #222;
+}
+.number .input-group-addon {
+    padding: 6px 38px 0px 9px;
+}
+.number span img {
+    margin-right: 8px;
+}
+.number {
+    padding: 10px 55px 0px 39px;
+}
+.number p {
+    color: #787878;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+input.btn.btn-info.sub {
+  font-family: 'Open Sans', sans-serif;
+    background: #3b3d4c;
+    border: none;
+    border-radius: 0px;
+    margin-top: 20px;
+    margin-left: 39px;
+    margin-bottom: 20px;
+    padding: 10px 35px 10px 35px;
+    font-size: 17px;
+}
+.promo-area button.btn.btn-primary {
+    color: #4065b3;
+    background: none;
+    border: 0px;
+    box-shadow: none;
+}
+
+
+/* second-area**/
+
+
+
+
+.col-sm-6.col-md-6.rt {
+    margin-top: 80px;
+}
+.have-mail {
+    display: inline-flex;
+}
+.mail-1 img {
+    margin-right: 8px;
+    width: 30px;
+        margin-top: -5px;
+}
+.mail-1 a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #3b5998;
+    font-weight: 600;
+}
+.phone-1 img {
+    margin-right: 0px;
+    width: 30px;
+        margin-top: -5px;
+}
+.phone-1 {
+    margin-left: 70px;
+}
+.phone-1 a{
+  font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #8d8d8d;
+    font-weight: 600;
+}
+.have-mail {
+    display: inline-flex;
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mail-1 :before {
+    width: 135px;
+    height: 2px;
+    background: #3b5998;
+    position: absolute;
+    content: "";
+    left: 16%;
+    top: 36px;
+}
+.phone-1 :before {
+    width: 140px;
+    height: 2px;
+    background: #8d8d8d;
+    position: absolute;
+    content: "";
+    left: 41%;
+    top: 36px;
+}
+.head-line-pic.second img {
+    width: 284px;
+    margin-left: -87px;
+}
+
+.head-line-pic.second p {
+    margin-left: -133px;
+    margin-bottom: 15px;
+}
+.head-line-pic.second h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: unset;
+    margin-left: -170px;
+    margin-top: 13px;
+}
+.head-line-pic.second h4 a {
+    color: #4065b3;
+}
+.promo-area label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #8d8d8d;
+    font-weight: 500;
+}
+input.form-control.se {
+    height: 44px !important;
+    margin-bottom: 0px !important;
+}
+.checkbox label {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+input.btn.btn-info.create {
+    font-family: 'Open Sans', sans-serif;
+    background: #3b3d4c;
+    border: none;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+}
+.modal-header h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+button.close.gf {
+    margin-top: -24px;
+}
+.modal-dialog.modal-dialog-centered.aq {
+    width: 78%;
+}
+.number.nh {
+    padding: 0px;
+    width: 91%;
+}
+.number.nh p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #8d8d8d;
+    font-weight: 500;
+    padding: 0px;
+}
+
+
+/* third-area**/
+
+button.btn.btn-primary {
+    background: none;
+    border: 0px;
+    padding: 0px;
+}
+button.btn.btn-primary:focus {
+    outline: none;
+}
+
+.col-sm-6.col-md-6.rt.ki {
+    margin-top: 8px;
+}
+.mail-new:before {
+    width: 135px;
+    height: 2px;
+    background: #3b5998;
+    position: absolute;
+    content: "";
+    left: 16%;
+    top: 136px;
+}
+.mail-new img {
+    margin-right: 8px;
+    width: 30px;
+    margin-top: -5px;
+}
+.mail-new a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #3b5998;
+    font-weight: 600;
+}
+.phone-new {
+    margin-left: 70px;
+}
+.phone-new a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #8d8d8d;
+    font-weight: 600;
+}
+.phone-new img {
+    margin-right: 0px;
+    width: 30px;
+    margin-top: -5px;
+}
+.phone-new:before {
+    width: 140px;
+    height: 2px;
+    background: #8d8d8d;
+    position: absolute;
+    content: "";
+    left: 41%;
+    top: 136px;
+}
+.have-mail.fd {
+    margin-top: 32px;
+}
+.head-line-pic.second.hh:before {
+    width: 400px;
+    height: 2px;
+    background: #dbdbdb;
+    position: absolute;
+    content: "";
+    left: 6%;
+    top: 276px;
+}
+.create-area {
+    margin: 40px 0px;
+}
+
+.create-area button.btn.btn-primary {
+    font-family: 'Open Sans', sans-serif;
+    background: #3b3d4c;
+    border: none;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    color: #fff;
+}
+.create-new h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 0px 0px 40px;
+    margin-right: 5px;
+    text-transform: unset;
+}
+input.btn.btn-info.create.new {
+    background: no-repeat;
+    color: #4065b3;
+    border: 1px #c4cfe5 solid;
+    box-shadow: none;
+    margin-top: 32px;
+}
+.form-group.as.new {
+    margin-top: 27px;
+}
+.form-group.as.re p {
+    padding: 0px;
+    margin-top: 10px;
+}
+.form-group.as.re p a {
+    color: #4065b3;
+}
+input.btn.btn-info.sign {
+    background: #3b3d4c;
+    border: none;
+    border-radius: 0px;
+    padding: 14px 203px 14px 203px;
+    font-size: 18px;
+}
+.create-area.tr.tt {
+    margin-top: 22px;
+}
+.create-area.tr.tt p {
+    text-align: left;
+    padding: 18px;
+    color: #222;
+}
+.create-area.tr.tt p a {
+    color: #4065b3;
+}
+.form-group.as.rr {
+    margin-top: 29px;
+}
+
+/* fourth-area**/
+
+.modal-header h3 {
+    text-transform: unset;
+    margin-left: 24px;
+}
+.head-line.ii p a {
+    color: #4065b3;
+}
+
+
+</style>
+
+<!-- hotel-area -->
+
+<div class="hotel-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="hotel-content">
+          <h2 align="center">Our Hotels</h2>
+          <p align="center">The Best Oriental Hotel</p>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder">
+            <div class="dor">
+              <ul>
+                <li><h2>Sogor Dormitory</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<span class="like">4/10</span></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-2.jpg">
+            <div class="boder">
+            <div class="dor say">
+              <ul>
+                <li><h2>Marrioff</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<span class="like">4/10</span></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder">
+            <div class="dor mal">
+              <ul>
+                <li><h2>Malaysia hotels</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<span class="like">4/10</span></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder">
+            <div class="dor sev">
+              <ul>
+                <li><h2>Seven Terraces</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<span class="like">4/10</span></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /hotel-area --> 
+
+<!-- rest-area -->       
+
+<div class="rest-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-sm-12">
+        <div class="rest-content">
+          <div class="col-sm-6 col-md-6">
+            <div class="everywhere" align="center">
+              <h2>REST & GO.com, <br>
+everywhere you go</h2>
+            </div>
+              <div class="apple">
+                <ul>
+                  <li><a href="#"><img src="image/apple.png"></a></li>
+                  <li><a href="#"><img src="image/android.png"></a></li>
+                </ul?>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /rest-area --> 
+
+
+<!-- chef-area --> 
+
+<div class="chef-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="chef-content" align="center">
+          <h2>Our Blog</h2>
+          <p>The Best Oriental Hotel</p>
+          <div class="col-sm-5 col-md-5">
+            <div class="blog-area" align="left">
+              <h1>01</h1>
+              <h3>Our Chef @ Work</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, v Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <button type="button" class="btn area">Discover More</button>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-7">
+            <div class="blog-picture">
+              <img src="image/blog.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /rest-area -->
+
+
+<!-- faster -->
+
+<div class="faster-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="faster-content" align="center">
+          <h2>Book Faster. Book Easily. Book Rest & Go</h2>
+          <p>The Best Oriental Hotel</p>
+          <div class="col-sm-7 col-md-7 ww">
+            <div class="fast-video">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/OD5IlLPl5e4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 extra">
+            <div class="discover" align="right">
+              <h4>Luxury Rooms</h4>
+              <h2>Discover our Rooms</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12">
+          <div class="ready" align="center">
+            <button type="button" class="btn ready">READY TO LAUNCH</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /faster -->
+
+
+<!-- mail-area -->
+<div class="main">
+<div class="mail-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="mail-content" align="center">
+          <div class="col-sm-4 col-md-4"><img src="image/mail.png"><h2>MAIL US</h2><p>info@rest&go.com</p>
+             <p>Lorem ipsum dolor sit amet, consectetur 
+             adipiscing elit, sed do eiusmod tempor incidid
+             unt ut labore et dolore magna aliqua.</p>
+             <button type="button" class="btn me bb">MAIL ME</button>
+            </div>
+            <div class="col-sm-4 col-md-4"><img src="image/locat.png"><h2>LOCATE US</h2><p>Malaysia FL 32904</p>
+             <p>Lorem ipsum dolor sit amet, consectetur 
+             adipiscing elit, sed do eiusmod tempor incidid
+             unt ut labore et dolore magna aliqua.</p>
+             <button type="button" class="btn me yes">VIEW MAP</button>
+            </div>
+            <div class="col-sm-4 col-md-4"><img src="image/need.png"><h2>NEED HELP</h2><p>+ 223 446 3343</p>
+             <p>Lorem ipsum dolor sit amet, consectetur 
+             adipiscing elit, sed do eiusmod tempor incidid
+             unt ut labore et dolore magna aliqua.</p>
+             <button type="button" class="btn me">CALL US</button>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /mail-area -->
+
+<!-- footer-area -->
+
+<div class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="footer-content">
+          <div class="footer-logo" align="center">
+            <img src="image/footer-logo.jpg">
+          </div>
+          <div class="col-sm-2 col-md-2">
+            <div class="social-media">
+              <ul>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-7">
+            <div class="information">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Shortcodes</a></li>
+                <li><a href="#">Areas</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="info-text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="subscribe">
+              <p>Subscribe to Newsletter</p>
+              
+            </div>
+            <div class="plan">
+              <form>
+    <div class="input-group">
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <span class="input-group-addon"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>   
+    </div>
+    
+  </form>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copy" align="center">
+              <p>Copyright © 2017 by Rest & Go</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+<!-- /footer-area -->        
+     
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+              
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- Modal -->
+

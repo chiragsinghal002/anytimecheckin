@@ -1,0 +1,45 @@
+[26-May-2019 06:55:06 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 06:55:06 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:12:54 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:12:54 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:25:32 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:25:32 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:26:05 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:26:05 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:26:12 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:26:12 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:28:07 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:28:07 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:29:28 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:29:28 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:30:33 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:30:33 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:33:52 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[26-May-2019 08:33:52 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[28-May-2019 01:25:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'data' (T_STRING) in /home1/restngo/public_html/new/api/response.php on line 6
+[30-May-2019 11:58:54 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[30-May-2019 11:58:54 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:47:57 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:47:57 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:28 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:28 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:29 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:29 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:31 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:31 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:34 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:48:34 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:50:01 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:50:01 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:50:11 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[02-Jun-2019 20:50:11 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:22:51 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:22:51 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:23:00 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:23:00 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:23:14 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[03-Jun-2019 03:23:14 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[06-Jun-2019 12:42:27 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[06-Jun-2019 12:42:27 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[06-Jun-2019 12:43:54 America/Chicago] PHP Warning:  include_once(footer.php): failed to open stream: No such file or directory in /home1/restngo/public_html/new/api/pay-paypal.php on line 866
+[06-Jun-2019 12:43:54 America/Chicago] PHP Warning:  include_once(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home1/restngo/public_html/new/api/pay-paypal.php on line 866

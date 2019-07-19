@@ -1,0 +1,558 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<title>Rest & Go</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<body>
+
+        
+ <!-- header -->
+
+ <!-- header -->
+
+ <div class="header-area inner new">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12 col-md-12">
+         <div class="header-content">
+           <div class="col-sm-12 col-md-12">
+             <div class="menu">
+                <nav class="navbar navbar-inverse sho">
+                  <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar top-bar"></span>
+                  <span class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+                  </button>
+                  </div>
+                     <!-- .navbar-collapse -->
+                     <div class="collapse navbar-collapse" id="example-2">
+                       <ul class="nav navbar-nav">
+            
+                         <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">+POST IDEAS <span class="caret"></span></a>
+             <ul class="dropdown-menu drop">
+              <li><a href="#">Bid</a></li>
+              <li><a href="#">Buy Now</a></li>
+              <li><a href="#">Donate</a></li>
+            </ul>
+          </li> -->
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li  class="codes"><a href="#">Blog</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                       </ul>
+          
+                    </div><!-- /.navbar-collapse -->
+
+                      </nav>
+             </div>
+           </div>
+          <!--  <div class="col-sm-1 col-md-1">
+             <div class="book">
+               <button type="button" class="btn now">Book Now</button>
+             </div>
+           </div> -->
+          
+         </div>
+          
+       </div>
+       <div class="row">
+        <div class="col-sm-12 col-md-12 ser">
+          <div class="search-hotel-area">
+            <div class="col-sm-4 col-md-4">
+              <form action="/action_page.php" class="icon">
+              <label class="se"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+            <input type="text"  placeholder="Enter Destination.." name="search"> 
+
+              </form>
+            </div>
+           <div class="col-sm-2 col-md-2">
+              <div class="month-area ss">
+              <img src="image/calender.png">
+              <div class="time-area">
+             <!--  <h2>10 March 2018</h2><p>Saturday</p> -->
+             <form>
+               <input type="text" class="form-control hasDatepicker" placeholder="Date" name="date" id="date">
+               <input type="text" class="form-control hasDatepicker" placeholder="Saturday" name="date" id="day">
+             </form>
+              </div>
+            </div>
+            </div>
+               <div class="col-sm-2 col-md-2 ">
+              <div class="month-area ss">
+              <img src="image/calender.png">
+             <div class="time-area">
+              <!-- <h2>10 March 2018</h2><p>Saturday</p> -->
+               <form>
+               <input type="text" class="form-control hasDatepicker" placeholder="Date" name="date" id="date">
+               <input type="text" class="form-control hasDatepicker" placeholder="Saturday" name="date" id="day">
+             </form>
+              </div>
+            </div>
+            </div>
+              <div class="col-sm-2 col-md-2 ">
+              <div class="month-area ss">
+              <img src="image/adult.png"> 
+              <div class="time-area">
+           <h2>5 adults</h2><p>4 rooms</p>
+           <!--  <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a> -->
+              </div>
+            </div>
+            </div>
+             <div class="col-sm-2 col-md-2 vv">
+              <div class="month-area butt">
+             <a href="hotel.html"><!-- <button type="button" class="btn btn-default sear">Search</button> --> <input type="submit" class="btn btn-default sear" placeholder="Search" name="submit" value="submit"></a>
+             
+            </div>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+   </div>
+ </div>
+
+<!-- /check-area -->
+
+
+<!-- bed-area -->
+
+<!-- /bed-area -->
+
+
+<!-- hotel-area -->
+
+<div class="hotel-area new">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="hotel-content inner">
+          <h2 align="center">Search Hotel</h2>
+          <p align="center">The Best Oriental Hotel</p>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor">
+              <ul>
+                <li><h2>Sogor Dormitory</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-2.jpg">
+            <div class="boder inner">
+            <div class="dor say">
+              <ul>
+                <li><h2>Marrioff</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor mal">
+              <ul>
+                <li><h2>Malaysia hotels</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+               <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+              <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor sev">
+              <ul>
+                <li><h2>Seven Terraces</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+                <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+             <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor">
+              <ul>
+                <li><h2>Sogor Dormitory</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+               <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+           <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-2.jpg">
+            <div class="boder inner">
+            <div class="dor say">
+              <ul>
+                <li><h2>Marrioff</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+               <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+               <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor mal">
+              <ul>
+                <li><h2>Malaysia hotels</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+               <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+               <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor sev">
+              <ul>
+                <li><h2>Seven Terraces</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+              <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+               <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor">
+              <ul>
+                <li><h2>Sogor Dormitory</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+             <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+          <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-2.jpg">
+            <div class="boder inner">
+            <div class="dor say">
+              <ul>
+                <li><h2>Marrioff</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+              <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+           <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor mal">
+              <ul>
+                <li><h2>Malaysia hotels</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+             <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+          <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+<div class="col-sm-3 col-md-3 pic">
+            <img src="image/hotel-1.jpg">
+            <div class="boder inner">
+            <div class="dor sev">
+              <ul>
+                <li><h2>Seven Terraces</h2><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></li>
+            <li>Address 12, Malaysia<!-- <span class="like">4/10</span> --></li>
+              
+              </ul>
+            </div>
+             <div class="dor new">
+              <ul>
+                <li>Price From<span class="dollor">$89</span></li>
+                <li><p>Lorem Ipsum is simply dummy text of the 
+                     printing and typesetting industry. 
+                     
+                     standard dummy text ever</p> </li>
+              </ul>
+            </div>
+            <div class="books" align="center">
+           <a href="new-detail.html"><button type="button" class="btn home">Book Now</button></a>
+            </div>
+          </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /hotel-area --> 
+
+
+
+
+<!-- faster -->
+
+
+
+<!-- /faster -->
+
+
+<!-- mail-area -->
+
+<!-- /mail-area -->
+
+<!-- footer-area -->
+
+<div class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="footer-content">
+          <div class="footer-logo" align="center">
+            <img src="image/footer-logo.jpg">
+          </div>
+          <div class="col-sm-2 col-md-2">
+            <div class="social-media">
+              <ul>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-7">
+            <div class="information">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Shortcodes</a></li>
+                <li><a href="#">Areas</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="info-text">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="subscribe">
+              <p>Subscribe to Newsletter</p>
+              
+            </div>
+            <div class="plan">
+              <form>
+    <div class="input-group">
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <span class="input-group-addon"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>   
+    </div>
+    
+  </form>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="copy" align="center">
+              <p>Copyright © 2017 by Rest & Go</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+<!-- /footer-area -->        
+     
+                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+              
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- Modal -->
+

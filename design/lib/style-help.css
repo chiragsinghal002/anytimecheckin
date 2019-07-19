@@ -1,0 +1,158 @@
+body {
+background: #eee;
+font-family: Arial;
+font-size: 14px;
+line-height: 19px;
+color: #000000;
+text-align: center;
+}
+#wrapper {
+width: 920px;
+background: #ffffff;
+text-align: left;
+margin: 20px auto;
+padding: 20px;
+-moz-border-radius: 4px;
+-khtml-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.subtitle {
+color: #ababab;
+font-size: 9pt;
+padding-top: 10px;
+}
+a {
+color: #0169b8;
+text-decoration: none;
+}
+a:hover {
+color: #0169b8;
+text-decoration: underline;
+}
+em {
+color: #404040;
+}
+.main-separater {
+border-bottom: 1px solid #808080;
+height: 1px;
+line-height: 1px;
+margin: 50px 0px 50px 0px;
+}
+.separater {
+border-bottom: 1px dotted #808080;
+height: 1px;
+line-height: 1px;
+margin: 30px 0px 30px 0px;
+}
+h1 {
+text-align: center;
+margin: 0;
+padding: 0 0 5px 0;
+}
+h3 {
+font-family: Georgia;
+color: #000000;
+font-size: 18pt;
+margin: 0;
+padding: 0 0 15px 0;
+}
+h4 {
+font-size: 14pt;
+color: #3073c7;
+padding: 0;
+margin: 0;
+}
+h5 {
+font-size: 12pt;
+color: #000000;
+padding: 0;
+margin: 0;
+}
+table {
+margin: 20px 0 0 0;
+font-size: 10pt;
+}
+td {
+padding: 5px 0;
+border-bottom: 1px solid #c0c0c0;
+}
+.files {
+width: 200px;
+}
+.file_desc {
+font-size: 8pt;
+}
+ul {
+padding-left: 20px;
+}
+ul li {
+list-style: square;
+}
+li {
+padding: 5px 0;
+}
+xmp {
+margin-top: 10px 0 0 20px;
+padding: 10px 10px 30px 10px;
+width: 800px;
+overflow: auto;
+background: #f6e8b1;
+-moz-border-radius: 4px;
+-khtml-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.inline {
+width: auto;
+padding: 0;
+display: inline;
+}
+code {
+background: #f6e8b1;
+}
+img {
+border: 1px solid #000000;
+}
+.notice {
+margin-top: 30px;
+border: 1px solid #ff0000;
+background: #f2dfdf;
+padding: 20px;
+line-height: 19px;
+color: #8a1f11;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+border: 1px solid #FBC2C4;
+}
+.notice a {
+text-decoration: underline;
+color: #8a1f11;
+}
+.notice a:hover {
+text-decoration: none;
+}
+.notice h4 {
+color: #8a1f11;
+padding-bottom: 5px;
+}
+.notice h5 {
+color: #8a1f11;
+padding-bottom: 5px;
+}
+.new {
+color: #e58100;
+font-weight: bold;
+}
+.removed {
+color: #73a900;
+font-weight: bold;
+}
+.moved {
+color: #41abef;
+font-weight: bold;
+}
+
+img {
+width: 98%;}

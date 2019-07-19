@@ -1,0 +1,31 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2018-06-15 08:29:35 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:29:42 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:29:57 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:30:03 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:31:52 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:37:32 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 08:37:44 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 10:00:07 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 10:43:24 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 10:45:43 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 10:51:47 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 12:14:19 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 12:25:58 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:05:36 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:05:36 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:06:23 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:06:30 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:19:47 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:19:47 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:19:53 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:27:10 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:27:10 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:27:14 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:48:07 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:48:29 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:48:29 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:50:48 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:50:48 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39
+ERROR - 2018-06-15 13:50:48 --> Severity: Notice --> Undefined index: is_admin /home/logodesi/public_html/projects/Rest-&-Go/hotel/application/views/admin/hotels/hotel_list.php 39

@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<title>Rest & Go</title>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+<body>
+
+        
+ <!-- header-inner -->
+   <div class="top-header">
+     <div class="container app">
+       <div class="row">
+         <div class="top-logo">
+           <img src="image/logo-top.jpg" />
+         </div>
+       </div>
+     </div>
+   </div>  
+
+
+<div class="book-area">
+  <div class="container">
+    <div class="row">
+      <div class="book-heading">
+        <h2>BOOK NOW</h2>
+        <P>Best Price Guranted</P>
+     
+      <div class="input-file">
+            <input type="text" id="fname" name="firstname" placeholder="Enter Destination">
+      </div>
+     </div>
+<div class="row tu">
+        <div class="col-xs-12 col-sm-6 col-md-6" onclick="date();">
+          <div class="calen" >
+       
+          <h2>Check-in</h2>
+          <p>Tue, 10 APRIL</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="calen new" id="datepicker">
+       
+          <h2>Check-in</h2>
+          <p>Tue, 10 APRIL</p>
+        </div>
+      </div>
+  
+        
+         <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="calen">
+       
+          <h2>Check-in Time</h2>
+          <p>10:00 AM</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="calen new">
+       
+          <h2>Check-out Time</h2>
+          <p>5:00 PM</p>
+        </div>
+      </div>
+      <div class="number-room" align="center">
+      	<a href="#"><span>1</span>Room <span>2</span>Adult <span>0</span>Children</a>
+      </div>
+
+      <div class="search-hotels">
+        <a href="#">SEARCH HOTELS</a>
+      </div>
+   </div>
+
+
+   
+
+
+  
+    </div>
+  </div>
+</div>
+     
+
+<div class="swim-area">
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</div> 
+
+
+<div class="footer-app">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="footer-app-list">
+        <ul>
+          <li><a href="#"><img src="image/footer-ser.png" /><br />Search</a></li>
+         <li><a href="#"><img src="image/caj.png" /><br />Hotels</a></li>
+          <li><a href="#"><img src="image/us.png" /><br />Profile</a></li>
+           <li><a href="#"><img src="image/bin.png" /><br />More</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+              
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+<style type="text/css">
+  .top-header {
+    background: #063783;
+        padding: 5px 0px;
+}
+body{overflow-x: hidden;}
+
+html{overflow-x: hidden;}
+
+.book-area {
+    background: #284e95;
+}
+
+.book-heading h2 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-size: 32px;
+        position: relative;
+    left: 10%;
+
+}
+.calen h2 {
+    color: #222;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-size: 26px;
+}
+
+.row.tu {
+    margin: 0 auto;
+    background: #42609f;
+}
+
+.footer-app-list img {
+    height: 30px;
+}
+
+.footer-app-list ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-app-list {
+    text-align: center;
+}
+
+
+.footer-app-list ul li:hover {
+    background: #063783;
+    cursor: pointer;
+
+}
+
+.footer-app-list ul li {
+    display: inline-block;
+    background: #222;
+     width: 24.7%;
+      padding: 10px 0px;
+ 
+}
+
+.swim-area{ background: url(image/swim.png); height: 1200px; background-size: cover;}
+
+.calen {
+background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    width: 87%;
+    left: 34px;
+
+}
+
+.search-hotels a:hover {
+    background: #063783;
+}
+
+.search-hotels a {
+    display: inline-block;
+    background: #3b3d4c;
+    padding: 15px 37%;
+    color: #fff;
+    font-size: 27px;
+    margin-top: 32px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+}
+
+
+.search-hotels {
+    text-align: center;
+}
+
+.calen p {
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #3a6fd3;
+}
+
+.book-heading h2:before{
+    content: '';
+    width: 60px;
+    height: 61px;
+    left: -8%;
+    top: -9px;
+    background: url(image/book-cal.png);
+    position: absolute;
+    opacity: 0.2;
+}
+
+
+
+
+.input-file{ 
+       position: relative;
+    top: 32px;
+}
+
+.input-file:before {
+     content: '';
+    width: 19px;
+    height: 21px;
+    left: 10px;
+    top: 9px;
+    background: url(image/location-mod.png);
+    position: absolute;
+}
+
+
+.input-file:after {
+    content: '';
+    width: 18px;
+    height: 21px;
+    right: 20px;
+    top: 5px;
+    background: url(image/app-ser.png);
+    position: absolute;
+}
+
+.book-heading p {
+     color: #c7d2e2;
+    font-size: 18px;
+    position: relative;
+    left: 10%;
+
+    font-weight: 500;
+}
+
+.input-file input#fname {
+    width: 100%;
+    height: 55px;
+        border-radius: 5px;
+    padding-left: 60px;
+}
+
+.calen.new {
+    margin-bottom: 51px;
+}
+
+
+.book-heading {
+    background: #4260a0;
+    padding: 50px;
+    padding-bottom: 95px;
+}
+
+
+
+.footer-app-list ul li {
+    width: 23.7%;
+}
+
+
+.swim-area{ height: 285px;}
+
+.search-hotels a {
+    padding: 15px 17%;
+    font-size: 27px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.book-area:before{ width: 0px !important; height: 0px !important;}
+</style>
+
+
+
+
+
+<style type="text/css">
+  
+@media only screen and (max-width: 480px) {
+.top-logo img {
+    width: 42%;
+    margin-left: 15px;
+}
+
+/*.book-heading h2:before{left: -15%;}
+}*/
+
+
+
+.number-room a {
+    position: relative;
+    top: 45px;
+    color: #222;
+    font-size: 17px;
+    background: #fff;
+        padding: 10px 50px 10px 50px;
+    border-radius: 6px;
+}
+.number-room a span {
+    color: #42609f;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.book-heading h2 {
+    font-size: 20px;
+  
+}
+
+.book-heading p{
+    font-size: 16px;
+}
+
+.calen p {
+    font-size: 13px;}
+
+
+.calen{ top: 60px;}
+
+.calen h2 {
+    font-size: 14px;}
+
+.book-heading{ padding: 15px;}
+
+
+.calen{     left: 0px;
+    width: 46%;
+    top: 33px;}
+
+.calen.new {
+    margin-bottom: 0px;
+}
+
+.book-area:before{ width: 0px !important; height: 0px !important;}
+
+
+.swim-area {
+    margin-top: -20px;
+     height: 245px;
+}
+
+.search-hotels a{ font-size: 24px;}
+
+
+.footer-app-list ul li a{ font-size: 14px;}
+
+
+.calen.new {
+  position: relative;
+    left: 54%;
+    top: 15px;
+}
+
+
+.search-hotels a {
+    padding: 10px 23%;
+    font-size: 19px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+.footer-app-list {
+    background: #222;
+}
+
+
+.footer-app-list ul li:last-child {
+    border: 0px;
+}
+
+.footer-app-list ul li {
+    width: 24%;
+    border-right: 1px solid #fff;
+}
+
+.input-file input#fname{ height: 35px;}
+
+
+.search-hotels a{margin-bottom: 5px;
+    margin-top: 92px;
+    position: relative;
+    bottom: 20px;}
+
+.calen {
+    margin-bottom: -35px;
+}
+
+.input-file {
+    position: relative;
+    /*top: 20px;*/
+}
+
+.footer-app-list img {
+    height: 17px;
+    width: 17px;
+}
+
+}
+
+</style>
+<script type="text/javascript">
+	function date(){
+		alert('chirag');
+// 		$( "#datepicker" ).datepicker();
+// //Pass the user selected date format
+// $( "#format" ).change(function() {
+// $( "#datepicker" ).datepicker( "option", "dateFormat", $(this).val() );
+// });
+	}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- Modal -->
+
